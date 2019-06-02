@@ -1,0 +1,241 @@
+:root{
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family:monospace ;
+  background-color: white;
+}
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+.muisTracker {
+  font-size: 1.8rem;
+  position: fixed;
+  margin-top: 7rem;
+  right: 0;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  background-color: #1abc9c;
+
+}
+
+.header a.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.header a.active {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+.Titel {
+  padding: 20rem;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 3vw;
+  animation-name: titelbackground;
+  animation-duration: 4s;
+}
+@keyframes titelbackground {
+  from { background-color: white;}
+  to { background-color: #1abc9c;}
+}
+
+.tussenTitel {
+  margin: -1.8rem;
+}
+h2, h3 {
+  font-size: 2vw;
+  text-align: center;
+  color: grey;
+  padding: 2rem;
+  margin-top: 1.8rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+h3 {
+  background-color: #1abc9c;
+  color: white;
+  font-size: 1.8vw;
+  font-weight: 100;
+  margin-top: -0.4rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.slideshow-kader {
+  max-width: 100vw;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+img {
+  width: 100%;
+}
+video {
+  max-height: 55vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -2rem;
+  padding: 1.6rem;
+  color: White;
+  font-weight: bolder;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+.tekst {
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  position: absolute;
+  bottom: 0.8rem;
+  width: 100%;
+  text-align: center;
+}
+.nummer {
+  color: White;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.logokader {
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+  width: 90vw;
+  height: 45vw;
+  display: grid;
+  grid-gap: 0.25rem;
+  grid-template-areas:
+  "a b c c"
+  "d e c c";
+}
+
+}
+.logoimg {
+  display: block;
+  margin:auto;
+
+
+}
+
+.een {
+  grid-area: a;
+  width: 22.5vw;
+  height: 22.5vw;
+
+}
+.twee {
+  grid-area: b;
+  width: 22.5vw;
+  height: 22.5vw;
+
+
+}
+.drie {
+  grid-area: c;
+  width: 45vw;
+  height: 45vw;
+
+
+}
+.vier {
+  grid-area: d;
+  width: 22.5vw;
+  height: 22.5vw;
+  padding-top: 80px;
+  align: center;
+
+
+}
+.vijf {
+  grid-area: e;
+  width: 22.5vw;
+  height: 22.5vw;
+}
+
+
+.footer {
+  font-size: 2rem;
+  line-height: 2;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+@media (min-width: 1750px) {
+
+
+body {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}

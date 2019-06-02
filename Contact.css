@@ -1,0 +1,154 @@
+:root{
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family:monospace ;
+  background-color: white;
+}
+.vierkanten {
+  padding-top: 5rem;
+  height: 5rem;
+}
+#Florre{
+  height: 10rem;
+  width: 10rem;
+}
+.vierkant1, .vierkant2, .vierkant3, .vierkant4 {
+  border: 0.5rem solid white;
+  width: 10rem;
+  height: 10rem;
+  -webkit-animation: rotation 5s infinite linear;
+  border-radius: 2rem;
+
+}
+.vierkant1 {
+  margin-left: 2rem;
+  margin-right: auto;
+  margin-top: 10rem;
+}
+.vierkant2 {
+  margin-left: auto;
+  margin-right: 2rem;
+  margin-top: 5rem;
+}
+.vierkant3 {
+  margin-left: 2rem;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+.vierkant4 {
+  margin-left: auto;
+  margin-right: 2rem;
+  margin-top: 5rem;
+}
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+.muisTracker {
+  font-size: 1.8rem;
+  position: fixed;
+  margin-top: 7rem;
+  right: 0;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  background-color: #1abc9c;
+
+}
+
+.header a.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.header a.active {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+.Titel {
+  margin-top: -10rem;
+  padding: 16rem;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 3vw;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 2rem;
+  color: #1abc9c;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border: 1px solid #1abc9c;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+input[type=submit] {
+  background-color: #1abc9c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: #1abc9c;
+}
+
+
+.footer {
+  position: relative;
+  font-size: 2rem;
+  line-height: 2;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+}

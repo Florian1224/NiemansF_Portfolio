@@ -1,0 +1,170 @@
+:root{
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family:monospace ;
+  background-color: white;
+
+}
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 2rem 1rem;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.header a.active {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+.Titel {
+  padding: 20rem;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 3vw;
+}
+h1 , h2 {
+  pointer-events: none;
+}
+h1{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.vierkanten {
+  padding-top: 5rem;
+  height: 5rem;
+}
+
+.vierkant2, .vierkant3 {
+  border: 0.5rem solid white;
+  width: 10rem;
+  height: 10rem;
+  -webkit-animation: rotation 5s infinite linear;
+  border-radius: 2rem;
+
+}
+.vierkant1 {
+    box-shadow: 0 0 0 1em #1abc9c,
+    0 1em 0 1em #1abc9c,
+    -2.5em 1.5em 0 .5em #1abc9c,
+    2.5em 1.5em 0 .5em #1abc9c,
+    -3em -3em 0 0 #1abc9c,
+    3em -3em 0 0 #1abc9c,
+    -2em -2em 0 0 #1abc9c,
+    2em -2em 0 0 #1abc9c,
+    -3em -1em 0 0 #1abc9c,
+    -2em -1em 0 0 #1abc9c,
+    2em -1em 0 0 #1abc9c,
+    3em -1em 0 0 #1abc9c,
+    -4em 0 0 0 #1abc9c,
+    -3em 0 0 0 #1abc9c,
+    3em 0 0 0 #1abc9c,
+    4em 0 0 0 #1abc9c,
+    -5em 1em 0 0 #1abc9c,
+    -4em 1em 0 0 #1abc9c,
+    4em 1em 0 0 #1abc9c,
+    5em 1em 0 0 #1abc9c,
+    -5em 2em 0 0 #1abc9c,
+    5em 2em 0 0 #1abc9c,
+    -5em 3em 0 0 #1abc9c,
+    -3em 3em 0 0 #1abc9c,
+    3em 3em 0 0 #1abc9c,
+    5em 3em 0 0 #1abc9c,
+    -2em 4em 0 0 #1abc9c,
+    -1em 4em 0 0 #1abc9c,
+    1em 4em 0 0 #1abc9c,
+    2em 4em 0 0 #1abc9c;
+    background: #1abc9c;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+.vierkant2 {
+  margin-left: auto;
+  margin-right: 2rem;
+  margin-top: 10rem;
+}
+.vierkant3 {
+  margin-left: 2rem;
+  margin-right: auto;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+.Florre{
+  width: 25vw;
+  position: absolute;
+}
+.hoofd {
+
+  -webkit-animation: rotation 3s infinite linear;
+}
+@-webkit-keyframes rotation {
+	from {-webkit-transform: rotate(359deg);}
+	to {-webkit-transform: rotate(0deg);}
+}
+h2 {
+  background-color: #1abc9c;
+  color: white;
+  font-size: 1.8vw;
+  font-weight: bold;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 25rem;
+  padding-right: 25rem;
+}
+
+.footer {
+  font-size: 2rem;
+  line-height: 2;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
